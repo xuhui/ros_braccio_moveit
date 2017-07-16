@@ -4,6 +4,7 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
+        - /Global Options1
         - /MotionPlanning1/Planned Path1
       Splitter Ratio: 0.74256
     Tree Height: 452
@@ -216,7 +217,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: braccio_base_link
+    Fixed Frame: base_link
     Frame Rate: 30
   Name: root
   Tools:
@@ -228,7 +229,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 1.20813
+      Distance: 3.06269
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
@@ -240,10 +241,10 @@ Visualization Manager:
         Z: 2.23518e-07
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: -0.0902031
+      Pitch: 0.299797
       Target Frame: base_link
       Value: XYOrbit (rviz)
-      Yaw: 3.09177
+      Yaw: 3.10677
     Saved: ~
 Window Geometry:
   Displays:

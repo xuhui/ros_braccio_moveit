@@ -1,0 +1,21 @@
+#POINTCLOUD
+# sensors:
+#   - sensor_plugin: occupancy_map_monitor/PointCloudOctomapUpdater
+#     point_cloud_topic: /move_group/camera/depth/points
+#     max_range: 1.5
+#     point_subsample: 1
+#     padding_offset: 0.1
+#     padding_scale: 1.0
+#     # filtered_cloud_topic: filtered_cloud
+
+# DEPTH IMAGE
+sensors:
+  - sensor_plugin: occupancy_map_monitor/DepthImageOctomapUpdater
+    image_topic: /move_group/camera/depth/image_raw
+    queue_size: 5
+    near_clipping_plane_distance: 0.3
+    far_clipping_plane_distance: 5.0
+    shadow_threshold: 0.2
+    padding_scale: 4.0
+    padding_offset: 0.03
+    # filtered_cloud_topic: filtered_cloud
